@@ -15,4 +15,4 @@
 3. Add [%your name] (without the brackets) to the top of the page
 4. Fill out [this](https://docs.google.com/forms/d/1AveRISoYDZsJpsm59WgmgwWVL1q3ypFZwrtMQVeT9SM/edit)
 5. Find a Word, or google docs document, and paste it in place of (type your content here), or use [this](https://www.google.com/policies/terms/)
-6. Open the [slides](https://drive.google.com/file/d/1L9-HRryqYYaq8LAfjqn7_BhdjbFH63yf/view?usp=sharing)
+6. Open the slides 
