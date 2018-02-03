@@ -1,0 +1,147 @@
+\documentclass[]{article}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{array}
+
+%opening
+\title{\LaTeX Examples}
+\author{}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\clearpage
+
+\section{Math}
+
+\textbf{Question 1. } Suppose that an LTI system function 
+$$H(z) = 1+5z^{-1}-3z^{-2}+2.5z^{-3}+4z^{-8}$$
+a) Determine the difference equation that relates the output $y[n]$ of the system to the input $x[n]$\\
+b) Determine and plot the output sequence $y[n]$ when the input is $x[n]=\delta[n]$
+\begin{align*}
+	\frac{Y(z)}{X(z)} = H(z) & \Rightarrow  \frac{y[n]}{x[n]} = h[n] = \delta[n] + 5\delta[n-1] - 3\delta[n-2] + \ldots\\
+	y[n] &= x[n] + 5x[n-1] -3x[n-2] + 2.5x[n-3] + 4x[n-8]\\
+	\text{When } x[n] = \delta[n] &\rightarrow y[n] = h[n]\\
+	y[n] &= [1,5,-3,2.5,0,0,0,0, 4]
+\end{align*}
+
+\noindent\textbf{Question 2.} Find the volume under the hyperbolic paraboloid over $R = [-1,1] \times [1,2]$
+$$z = 3y^2 - x^2 + 2$$
+\begin{align*}
+	\int^2_1\int^1_{-1} 3y^2 -x^2 dxdy & =  & \int_1^2 3y^2x -\frac{1}{3}x^3+2x\vert^1_{-2}\\
+	\int^2_1 3y^2-\frac{1}{3} + 2 + (3y^2 + \frac{1}{3} + 2) dy & = & \int_1^2 6y^2 + \frac{10}{3} dy\\
+	2y^3+\frac{10}{3}y\vert_1^2 & = & 16 + \frac{20}{3} - 2 - \frac{10}{3} \\
+	14 + \frac{10}{3} & = & \frac{52}{3}
+\end{align*}
+
+\noindent\textbf{Question 3.} Give an expression for $y(x,t)$ for a sinusoidal wave traveling along a string in the negative $x$ direction, given that $y_{max}$ = 40, $\lambda$ = 40, $f$ = 10 Hz, and
+$$\text{a) } y(0,0) = 0$$
+$$\text{b) } y(3.75, 0) = 0$$  
+\begin{align*}
+	a)\ y(x,t) = & A cos(\omega t + \frac{2\pi}{\lambda}x + \phi)\\
+	y(x,t) = & 40 cos(2\pi 10 t + \frac{2 \pi}{30} x + \phi)\\
+	y(0,0) = 0 = & 40 cos(\phi)\\
+	\Rightarrow & \phi = \frac{\pi}{2}, y(x,t) = 40 sin(2\pi 10t + \frac{\pi}{15}x)\\
+	b)\ y(3.75,0) = 3.75 = & 40\cos(\frac{pi}{15}3.75 + \phi)\\
+	\Rightarrow & \phi = .220 \pi, y(x, t) = 40cos(2\pi t + \frac{\pi}{15}x + .220\pi)
+\end{align*}
+
+\section{Section2}
+Lorem\footnote{Lorem ipsum sorced from: lipsum.com} ipsum dolor sit amet, consectetur adipiscing elit. Ut ac nisl id ligula semper posuere nec pharetra risus. Donec quis mauris eros. Proin blandit maximus sem, non mattis lacus tincidunt nec. Sed lacus nibh, tempus in
+\subsection{Subsection 1}
+malesuada nec, egestas a ex. Nam tempor nisl sed odio commodo tempor. Maecenas sodales vitae nisi sed molestie. Aenean vitae metus bibendum, pulvinar elit a, dapibus\footnote{This is a footnote} enim. Nunc nec arcu a lacus commodo porta. Suspendisse non sollicitudin diam. Morbi condimentum tellus a viverra porttitor. 
+\subsubsection{Subsub section 1}
+lacinia at massa sit amet elementum. Nam sodales bibendum ex, non lobortis lacus malesuada nec. Nulla efficitur quam arcu, sit amet feugiat velit consectetur in. Pellentesque quis molestie purus, ut mattis nunc.\\
+Proin posuere, odio at vehicula tempor, felis justo scelerisque sem, commodo volutpat nunc sapien sed justo. Vestibulum sollicitudin elit ac eros mattis consectetur. Donec non nisi in quam malesuada cursus quis ac ante.\\
+ Maecenas sed massa pharetra, tincidunt leo quis, blandit tortor. In justo turpis, tincidunt non facilisis sit
+ amet, co
+\subsection{Subsection 2}
+Nulla odio elit, ultricies a leo eget, facilisis faucibus turpis. Donec condimentum hendrerit enim eu rutrum. Fusce ultricies diam vitae felis mollis aliquet. Ut porta dui sed dapibus convallis. Integer lobortis turpis eu neque facilisis, quis vulputate mauris suscipit. Phasellus tristique felis vitae sem accumsan, no
+\section{List}
+\begin{itemize}
+\item  vestibulum tortor tempus. Integer in commodo nibh, eget commodo sem. Integer gravida vel massa at convallis. Cras ex arcu, euismod ult
+\item t nisl, vitae consequat augue lorem sit am
+\begin{itemize}
+\item um vel, facilisis est. Praese
+\item apibus convallis. Integ
+\item ia diam, ut rutrum ante. Suspendisse ut lorem mi. Quisque at purus volutpat, lacinia felis quis, aliquet nibh. Aliquam ut tortor finibus, consequat ipsum vel, facilisis est. Praesent q
+\end{itemize}
+\item io elit, ultricies a leo eget, facilisis faucib
+\end{itemize}
+
+\clearpage
+\section{Images}
+ndard setter deliverable emerging market organic growth stack diversity prince2 practitioner silo driver industry leader capability dot-bomb 
+\begin{figure}[h]
+\centering
+\includegraphics[width=.5\linewidth]{gwtc_logo}
+\caption{The GW Tech Collective Logo}
+\end{figure}
+low hanging fruit team player executive search synergy agile workflow ballpark figure enterprise core competency proposition stakeholder alignment big data cloud action point bandwidth standpoint brand vertical platform
+\begin{figure}[b]
+\begin{subfigure}[b]{.5\textwidth}
+    \includegraphics[width=\textwidth]{LaTeX_logo}
+    \caption{\LaTeX logo}
+\end{subfigure}
+\begin{subfigure}[b]{.5\textheight}
+    \includegraphics[width=\textwidth]{LaTeX2e_logo}
+    \caption{\LaTeXe logo}
+\end{subfigure}
+\caption{Use the \texttt{subcaption} package, and Google to figure out how to make subfigures}
+\end{figure}
+
+\clearpage
+
+\section{Tables}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|c|}
+\hline
+f & f(x)\\\hline
+0 & 2\\\hline
+1 & 4 \\\hline
+2 & 6 \\\hline
+3 & 8 \\\hline
+4 & 10 \\\hline
+\end{tabular}
+\caption{$f(x) = 2x+2$}
+\end{table}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lll}
+1 & 2 & 3000\\
+4 & 5 & 6000\\
+7 & 8 & 9000\\
+\end{tabular}
+\caption{Table with no borders}
+\end{table}
+
+\begin{table}[h]
+\centering
+\title{Balance Sheet}
+\begin{tabular}{lr@{\hskip 1em}lr}
+Assets & & Liabilities &\\\hline
+Cash & 12,000 & Notes Payable & 45,500\\
+Accounts Receivable & 24,500 & Accounts Payable & 7,500\\
+Inventory & 37,020 & Salaries Payable & 3,250\\
+Furniture & \underline{8,000} & Taxes Payable & \underline{1,275}\\
+\textbf{Total Assets}& \underline{\underline{81,520}} & \textbf{Total Liabilities} & 57,525\\
+&&Owner's Equity&\\
+&&Retained Earnings& \underline{23,995}\\
+&&\textbf{Total Owner's Equity}& 23,995\\
+&&&\\
+&&\textbf{Total Liabilities and Owner's Equity} & \underline{\underline{81,520}}
+\end{tabular}
+\end{table}
+
+
+
+
+\end{document}
