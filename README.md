@@ -1,7 +1,6 @@
 
 ## GW Tech Collective LaTeX Workshop
-## 2/3/2018 SEH 4040 1-3pm
-
+## 4/7/2019 Duques Hall
 
 ## Instructions
 1.  Go to: [overleaf.com](https://www.overleaf.com/signup), and create an account
