@@ -12,7 +12,6 @@
 		* \usepackage{amsmath}
 		* \usepackage{graphicx}
 		* \usepackage{subcaption}
-3. Add [%your name] (without the brackets) to the top of the page
-4. Fill out [this](https://docs.google.com/forms/d/1AveRISoYDZsJpsm59WgmgwWVL1q3ypFZwrtMQVeT9SM/edit)
-5. Find a Word, or google docs document, and paste it in place of (type your content here), or use [this](https://www.google.com/policies/terms/)
-6. Open the slides 
+3. Fill out [this](https://docs.google.com/forms/d/1AveRISoYDZsJpsm59WgmgwWVL1q3ypFZwrtMQVeT9SM/edit)
+4. Find a Word, or google docs document, and paste it in place of (type your content here), or use [this](https://www.google.com/policies/terms/)
+5. Open the slides 
